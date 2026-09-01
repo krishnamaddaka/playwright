@@ -3,7 +3,7 @@ import {test,expect} from 'playwright/test';
 // https://parabank.parasoft.com/
 //fixture  - global variable : page,context,browser 
 test('BaseClass',async({page}) => {
-    await page.goto('https://parabank.parasoft.commm/');
+    await page.goto('https://parabank.parasoft.com/');
     let title: string=await page.title();
     console.log(title);
     await expect(page).toHaveTitle("ParaBank | Welcome | Online Banking");
